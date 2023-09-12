@@ -1,8 +1,13 @@
 # What is the effect of a genre of a movie to the IMDb popularity score?
+## Introduction
 Is there a significant difference in the IMDb popularity scores among different movie genres. A film producer should perhaps consider producing an action genre movie rather than a thriller genre movie, despite that producer's preference for thriller. What other mediators could affect this effect. Some things that will be further explored and analyzed in this research. The research method will be discussed in more detail later in this project. So feel free to keep reading and get along with the prepared data.
 
+## Motivation
+
+
+
 ## Research question with possible mediators/moderators
-We are planning to use the IMDb data files for this project. Our main research question will be:
+This research will make use of IMDb data files, downloaded [here](https://developer.imdb.com/non-commercial-datasets/). Our main research question will be:
 How does the genre of a movie impact its IMDb popularity score?
 To go more in dept on this research, some of the underneath moderators/mediators could help to achieve this:
 1. Runtime in minutes
