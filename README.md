@@ -1,4 +1,6 @@
-# Research question with possible mediators/moderators
+# What is the effect of a genre of a movie to the IMDb popularity score>
+
+## Research question with possible mediators/moderators
 We are planning to use the IMDb data files for this project. Our main research question will be:
 How does the genre of a movie impact its IMDb popularity score?
 To go more in dept on this research, some of the underneath moderators/mediators could help to achieve this:
