@@ -1,4 +1,4 @@
-# What is the effect of a genre of a movie to the IMDb popularity score>
+# What is the effect of a genre of a movie to the IMDb popularity score?
 
 ## Research question with possible mediators/moderators
 We are planning to use the IMDb data files for this project. Our main research question will be:
