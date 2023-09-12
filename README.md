@@ -1,12 +1,10 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11726003&assignment_repo_type=AssignmentRepo)
-# Example of reproducible research workflow 
-
-This is a basic example repository using Gnu make for a reproducible research workflow, as described in detail here: [tilburgsciencehub.com](http://tilburgsciencehub.com/). 
-
-The main aim of this to have a basic structure, which can be easily adjusted to use in an actual project.  In this example project, the following is done: 
-1. Download and prepare data
-2. Run some analysis
-3. Present results in a final pdf generated using LaTeX
+# Research question with possible mediators/moderators
+We are planning to use the IMDb data files for this project. Our main research question will be:
+How does the genre of a movie impact its IMDb popularity score?
+To go more in dept on this research, some of the underneath moderators/mediators could help to achieve this:
+1. Runtime in minutes
+2. Start year/end year with a specific focus on the Covid-19 time period
+3. Adult movie or not
 
 ## Dependencies
 - R 
