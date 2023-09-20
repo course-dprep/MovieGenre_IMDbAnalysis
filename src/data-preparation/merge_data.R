@@ -1,9 +1,12 @@
-# Load datasets into R 
-df1 <- read.csv("./gen/data-preparation/input/dataset1.csv")
-df2 <- read.csv("./gen/data-preparation/input/dataset2.csv")
+library(data.table)
+library(tidyverse)
 
-# Merge on id
-df_merged <- merge(df1,df2,by="id")
+# Load datasets into R 
+titles <- setDT(read_tsv(gzfile('../../data/title.basics.tsv.gz')))
+ratings <- setDT(read_tsv(gzfile('../../data/title.ratings.tsv.gz')))
+
+# Merge on tconst
+IMDb_merged<-left_join(titles,ratings,by="tconst")
 
 # Save merged data
-save(df_merged,file="./gen/data-preparation/temp/data_merged.RData")
+save(IMDb_merged, file = "../../gen/data-preparation/temp/data_merged.Rdata")
