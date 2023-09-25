@@ -1,8 +1,10 @@
-library(dplyr)
+library(tidyverse)
 # Load merged data 
-load("../../gen/data-preparation/temp/data_merged.RData")
+IMDb_merged<-read_csv("../../data/IMDb_merged.csv")
 
 # Remove variables that we do not need
 IMDb_merged <- IMDb_merged %>% 
-  select(tconst, originalTitle, isAdult, genres, averageRating)
+  select(tconst, primaryTitle, isAdult, genres, startYear, averageRating)
 
+# Write new file
+write_csv(IMDb_merged,file = "../../data/IMDb_transformed.csv")
