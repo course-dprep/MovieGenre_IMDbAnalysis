@@ -1,11 +1,28 @@
-# Load merged data 
-load("./gen/data-preparation/temp/data_merged.RData")
+library(tidyverse)
 
-# Drop observations with V1 <= -0.9
-df_cleaned <- df_merged[df_merged$V1 > -0.9,]
+# Load transformed data
+IMDb_merged<-read_csv("../../data/IMDb_transformed.csv")
 
-# Remove V1
-df_cleaned <- df_cleaned[,c(1,2,4:7)]
+# Convert startYear to numeric, non-numeric values get NA
+IMDb_merged$startYear <- as.numeric(as.character(IMDb_merged$startYear))
 
-# Save cleaned data
-save(df_cleaned,file="./gen/data-preparation/output/data_cleaned.RData")
+# Remove NA's in startYear 
+IMDb_merged <- IMDb_merged[!is.na(IMDb_merged$startYear), ]
+
+# Convert runtimeMinutes to numeric, replacing non-numeric values with NA
+IMDb_merged$runtimeMinutes <- as.numeric(as.character(IMDb_merged$runtimeMinutes))
+
+# Remove NA's in movies runtime
+IMDb_merged <- IMDb_merged[!is.na(IMDb_merged$runtimeMinutes), ]
+
+# Exclude extreme values, set realistic range
+IMDb_merged <- subset(IMDb_merged, runtimeMinutes >= 30 & runtimeMinutes <= 300)
+
+# Remove rows with "\N" in the 'genres' column
+IMDb_merged <- IMDb_merged[IMDb_merged$genres != "\\N", ]
+
+# Remove NA'S in ratings
+IMDb_merged <- IMDb_merged[!is.na(IMDb_merged$averageRating), ]
+
+# Write new file
+write_csv(IMDb_merged,file = "../../data/IMDb_cleaned.csv")
