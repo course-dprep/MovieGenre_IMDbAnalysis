@@ -2,6 +2,7 @@ library(tidyverse)
 
 # Read filtered csv
 titles<- read_csv("../../data/titles_movies_only.csv")
+
 # Read rating data set
 ratings <- read_tsv(gzfile('../../data/title.ratings.tsv.gz'))
 
