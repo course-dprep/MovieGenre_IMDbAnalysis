@@ -1,16 +1,11 @@
 
-RDATA= ../../data/raw_data
-TDATA= ../../data/temp_data
+all: ../../data/raw_data/title.ratings.tsv.gz ../../data/raw_data/title.basics.tsv.gz ../../data/temp_data/IMDb_merged.csv ../../data/temp_data/IMDb_merged.csv ../../data/temp_data/IMDb_transformed.csv ../../data/output/IMDb_cleaned.csv ../../data/temp_data/titles_movies_only.csv
 
-
-
-download: title.ratings.tsv.gz title.basics.tsv.gz
-title.ratings.tsv.gz: download_data.R
-	Rscript download_data.R
-title.basics.tsv.gz: download_data.R
+../../data/raw_data/title.ratings.tsv.gz: download_data.R
 	Rscript download_data.R
 
-all: ../../data/temp_data/titles_movies_only.csv ../../data/temp_data/IMDb_merged.csv ../../data/temp_data/IMDb_merged.csv ../../data/temp_data/IMDb_transformed.csv ../../data/output/IMDb_cleaned.csv
+../../data/raw_data/title.basics.tsv.gz: download_data.R
+	Rscript download_data.R
 
 ../../data/temp_data/titles_movies_only.csv: filter.R
 	Rscript filter.R
