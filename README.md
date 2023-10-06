@@ -12,6 +12,17 @@ Film production is a substantial investment. Movie producers face the task of ch
 #### **Results**
 
 ## Repository Overview
+```
+- data
+- gen
+- src
+  - analysis    
+  - data-preparation
+  - paper
+- .gitignore
+- README.md
+- makefile
+```
 
 ## Dependencies
 
