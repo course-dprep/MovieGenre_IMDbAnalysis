@@ -14,7 +14,12 @@ Film production is a substantial investment. Movie producers face the task of ch
 ## Repository Overview
 ```
 - data
+  -output
+  -raw-data
+  -temp-data
 - gen
+  -output
+  -temp
 - src
   - analysis    
   - data-preparation
