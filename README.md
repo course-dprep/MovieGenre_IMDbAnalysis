@@ -62,13 +62,13 @@ To run the code, follow these instructions:
 1. Fork this repository
 2. Open your command line/terminal and run the following code:
 ```
-git clone https://github.com/{your username}/team-project-team_3.git
+git clone https://github.com/course-dprep/MovieGenreIMDbAnalysis
 ```
-3. Set your working directory to `team-project-team_3` and run the following command:
+3. Set your working directory to `MovieGenreIMDbAnalysis` and run the following command:
 ```
 make
 ```
-4. When make has successfully run all the code, it will generate a HTML with the presentation of our analysis. 
+4. When make has successfully run all the code, it will generate multiple graphs with the presentation of our analysis. 
 5. To clean the data of all raw and unnecessary data files created during the pipeline, run the following code in the command line/terminal: 
 ```
 make clean
