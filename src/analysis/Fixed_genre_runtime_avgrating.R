@@ -4,6 +4,7 @@
 library(fixest)
 library(data.table)
 library(ggplot2)
+library(tidyverse)
 
 # Load data
 IMDB_cleaned <- read_csv("../../data/output/IMDb_cleaned.csv")

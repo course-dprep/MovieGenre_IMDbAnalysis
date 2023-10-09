@@ -3,10 +3,14 @@
 library(ggplot2)
 library(dplyr)
 library(broom)
+library(tidyverse)
 
 # Load data
 IMDB_cleaned <- read_csv("../../data/output/IMDb_cleaned.csv")
 IMDb_separate_rows_genres <- IMDB_cleaned %>% select(primaryTitle, genres, averageRating, startYear, runtimeMinutes) %>% separate_rows(genres, sep = ",")
+
+# Set new dummy variable whether a movie is a hit or not
+IMDb_separate_rows_genres$isHit <- ifelse(IMDb_separate_rows_genres$averageRating >= 7.0, 1, 0)
 
 # Run a the logistic regression model on genres to isHit
 logistic_model_startYear <- glm(isHit ~ startYear, data = IMDb_separate_rows_genres, family = "binomial")
