@@ -2,13 +2,11 @@
 library(ggplot2)
 library(tidyverse)
 
-# Set WD to source file location
-setwd("../../data")
 
 # PLOT 1: AVERAGE RATING PER MOVIE
 # Plot about average rating per movie genre
 ## First make sure that each observation has one genre
-IMDB_cleaned <- read_csv("IMDb_cleaned.csv")
+IMDB_cleaned <- read_csv("../../data/output/IMDb_cleaned.csv")
 IMDb_separate_rows_genres <- IMDB_cleaned %>% select(primaryTitle, genres, averageRating, startYear, runtimeMinutes) %>% separate_rows(genres, sep = ",")
 
 # Calculate the mean rating per genre
