@@ -1,10 +1,10 @@
 library(tidyverse)
 
-# Load dataset big data set plus sample
-titles <-read_tsv(gzfile('../../data/raw_data/title.basics.tsv.gz'))
+# Load titles dataset into variable
+titles <-read_tsv(gzfile('../../data/title.basics.tsv.gz'))
 
-# Filter for only movies 
+# Filter for only movies (excluding other titleTypes)
 titles_movies_only = titles %>% filter(titleType=='movie')
 
-# Generate new filtered csv files
-write_csv(titles_movies_only, '../../data/temp_data/titles_movies_only.csv')
+# Generate new csv file filtered on movies
+write_csv(titles_movies_only, '../../gen/temp/titles_movies_only.csv')

@@ -1,13 +1,13 @@
 library(tidyverse)
 
 # Read filtered csv
-titles_movies_only<- read_csv("../../data/temp_data/titles_movies_only.csv")
+titles_movies_only<- read_csv("../../gen/temp/titles_movies_only.csv")
 
-# Read rating data set
-ratings <- read_tsv(gzfile('../../data/raw_data/title.ratings.tsv.gz'))
+# Load ratings dataset into variable
+ratings <- read_tsv(gzfile('../../data/title.ratings.tsv.gz'))
 
-# Merge on tconst
+# Merge titles dataset and ratings dataset on common variable "tconst"
 IMDb_merged<-left_join(titles_movies_only,ratings,by="tconst")
 
-# Save merged data
-write_csv(IMDb_merged, file = "../../data/temp_data/IMDb_merged.csv")
+# Write new file with merged data
+write_csv(IMDb_merged, file = "../../gen/temp/IMDb_merged.csv")
