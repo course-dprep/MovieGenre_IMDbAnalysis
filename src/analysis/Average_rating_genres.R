@@ -13,9 +13,6 @@ IMDB_genres_avgrating <- IMDb_separate_rows_genres %>%
   group_by(genres) %>%
   summarize(Average_Rating = mean(averageRating)) 
 
-#Set working directory to Gen/Analysis/Output
-setwd("../gen/analysis/output")
-
 # Make plot about: How does the genre of a movie impact its IMDb popularity score?
 Plot_AvgRating_genres <- ggplot(IMDB_genres_avgrating, aes(x = genres, y = Average_Rating)) +
   geom_point() +
