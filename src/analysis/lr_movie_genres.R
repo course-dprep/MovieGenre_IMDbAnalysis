@@ -6,7 +6,7 @@ library(dplyr)
 library(tidyverse)
 
 # Load data
-IMDB_cleaned <- read_csv("../../data/output/IMDb_cleaned.csv")
+IMDB_cleaned <- read_csv("../../gen/output/IMDb_cleaned.csv")
 IMDb_separate_rows_genres <- IMDB_cleaned %>% select(primaryTitle, genres, averageRating, startYear, runtimeMinutes) %>% separate_rows(genres, sep = ",")
 
 # Set new dummy variable whether a movie is a hit or not
