@@ -14,3 +14,6 @@ first: ../../data/output/IMDb_cleaned.csv ../../gen/output/Plot_AvgRating_genres
 
 ../../gen/output/Fixed_effects_genre_avgrating.pdf: ../../data/output/IMDb_cleaned.csv Fixed_genre_runtime_avgrating.R
 	Rscript Fixed_genre_runtime_avgrating.R
+	
+clean:
+	make -C ../../data/temp_data -f Makefile clean
