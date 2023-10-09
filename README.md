@@ -59,12 +59,12 @@ Please follow the installation guides on https://tilburgsciencehub.com
 ## Running Instructions
 #### **Running The Code By Make**
 To run the code, follow these instructions:
-1. Fork this repository
+1. Fork this repository{choose a name for repository}
 2. Open your command line/terminal and run the following code:
 ```
-git clone https://github.com/course-dprep/MovieGenreIMDbAnalysis
+git clone https://github.com/{your username}/{name of repository}
 ```
-3. Set your working directory to `MovieGenreIMDbAnalysis` and run the following command:
+3. Set your working directory to `{name of repository}` and run the following command:
 ```
 make
 ```
