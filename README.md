@@ -49,11 +49,24 @@ This plot calculates the estimated effect of a genre on the average rating when 
 ```
 
 ## Dependencies
-Please follow the installation guides on https://tilburgsciencehub.com
-- R 
-  - [Installation Guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/)
-- Make
-  - [Installation Guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/)
+
+Please follow the installation guides on http://tilburgsciencehub.com/.
+
+- Python. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/python/).
+- R. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/).
+- Make. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/).
+- Pandoc. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/pandoc/)
+
+- For R, make sure you have installed the following packages:
+```
+install.packages("readr")
+install.packages("data.table")
+install.packages("broom")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("fixest")
+install.packages("tidyverse")
+```
   
 
 ## Running Instructions
@@ -75,7 +88,7 @@ make clean
 ```
 ## Authors
 Team 3: 
-- [danivisser](https://github.com/danivisser), e-mail: d.visser@tilburguniversity.edu 
+- [Dani Visser](https://github.com/danivisser), e-mail: d.visser@tilburguniversity.edu 
 - [Dirk Beekmans](https://github.com/DirkBeekmans), e-mail: d.a.beekmans@tilburguniversity.edu 
 - [Sjors Boelaars](https://github.com/SjorsBoelaars1), e-mail: s.boelaars@tilburguniversity.edu 
 - [Parisa Vatankhah](https://github.com/pvatankhah), e-mail: p.vatankhah@tilburguniversity.edu
