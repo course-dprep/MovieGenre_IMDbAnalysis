@@ -33,16 +33,12 @@ This plot calculates the estimated effect of a genre on the average rating when 
 ## Repository Overview
 ```
 - data
-  -output
-  -raw-data
-  -temp-data
 - gen
   -output
   -temp
 - src
   - analysis    
   - data-preparation
-  - paper
 - .gitignore
 - README.md
 - makefile
