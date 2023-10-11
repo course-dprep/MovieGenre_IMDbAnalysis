@@ -32,6 +32,7 @@ Please follow the installation guides on http://tilburgsciencehub.com/.
 
 - R. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/).
 - Make. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/).
+- Pandoc. [Installation guide](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/pandoc/)
 
 - For R, make sure you have installed the following packages:
 ```
