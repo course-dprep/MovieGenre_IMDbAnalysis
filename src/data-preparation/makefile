@@ -1,7 +1,7 @@
-first: ../../gen/output/IMDb_cleaned.csv data_exploration.html
+first: ../../gen/output/IMDb_cleaned.csv ../../gen/output/data_exploration.html
 
-data_exploration.html: ../../data/title.basics.tsv.gz ../../gen/output/IMDb_cleaned.csv ../../data/title.ratings.tsv.gz data_exploration.Rmd
-	R -e "rmarkdown::render('data_exploration.Rmd')"
+../../gen/output/data_exploration.html: ../../data/title.basics.tsv.gz ../../gen/output/IMDb_cleaned.csv ../../data/title.ratings.tsv.gz data_exploration.Rmd
+	R -e "rmarkdown::render('data_exploration.Rmd', output_file='../../gen/output/data_exploration.html')"
 	
 ../../gen/output/IMDb_cleaned.csv: ../../gen/temp/IMDb_transformed.csv clean_data.R
 	Rscript clean_data.R
