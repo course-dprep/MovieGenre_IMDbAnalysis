@@ -30,7 +30,8 @@ coefficient_plot <- ggplot(DF_log_genres, aes(x = reorder(term, estimate), y = e
 
 # Store it in a more clear variable with lay out settings
 Genres_AvgRating_estimateplot <- coefficient_plot + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-Genres_AvgRating_estimateplot
+
 
 # Save the plot as a pdf
 ggsave("../../gen/output/Genres_on_avgrating_estimate.pdf", plot = Genres_AvgRating_estimateplot, width = 12, height = 10)
+
