@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # Load transformed data
-IMDb_merged<-read_csv("../../data/temp_data/IMDb_transformed.csv")
+IMDb_merged<-read_csv("../../gen/temp/IMDb_transformed.csv")
 
 # Convert startYear to numeric, non-numeric values get NA
 IMDb_merged$startYear <- as.numeric(as.character(IMDb_merged$startYear))
@@ -24,5 +24,5 @@ IMDb_merged <- IMDb_merged[IMDb_merged$genres != "\\N", ]
 # Remove NA'S in ratings
 IMDb_merged <- IMDb_merged[!is.na(IMDb_merged$averageRating), ]
 
-# Write new file
-write_csv(IMDb_merged,file = "../../data/output/IMDb_cleaned.csv")
+# Write new file with final output data
+write_csv(IMDb_merged,file = "../../gen/output/IMDb_cleaned.csv")
