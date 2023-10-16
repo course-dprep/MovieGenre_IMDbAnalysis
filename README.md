@@ -52,7 +52,7 @@ To run the code, follow these instructions:
 1. Fork this repository
 2. Open your command line/terminal and run the following code:
 ```
-git clone https://github.com/course-dprep/MovieGenreIMDbAnalysis
+git clone https://github.com/course-dprep/MovieGenre_IMDbAnalysis
 ```
 3. Set your working directory to `MovieGenreIMDbAnalysis` and run the following command:
 ```
