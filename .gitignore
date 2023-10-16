@@ -5,3 +5,5 @@
 **gen/
 **.Rout
 *.csv
+.Rproj.user
+gen/analysis/output/*.png

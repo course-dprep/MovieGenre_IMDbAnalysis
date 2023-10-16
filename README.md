@@ -12,6 +12,21 @@ To address our research question, we decided to run a logistic regression of gen
 
 #### **Results**
 
+##### __The average rating per genre__
+<img src="gen/analysis/output/average_rating_per_genre.png" alt="__The average rating per genre__" width="600" />
+
+
+##### __The estimated change in rating per genre__
+<img src="gen/analysis/output/Estimate_on_avg_rating_per_genre.png" alt="__The estimate on average rating per genre__" width="650" />
+
+
+##### __Probability of being a hit__
+<img src="gen/analysis/output/Probability_of_being_a_hit.png" alt="__Probability of being a hit__" width="600" />
+
+
+##### __The fixed effect__
+<img src="gen/analysis/output/fixed_effects.png" alt="__The fixed effect__" width="600" />
+
 ## Repository Overview
 ```
 - data
